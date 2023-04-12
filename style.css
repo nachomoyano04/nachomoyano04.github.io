@@ -1,0 +1,14 @@
+body{
+    background-color: #000000 ;
+    color: #B95915;
+}
+ul{
+    margin: 0px 0px 20px 0px;
+    background-color: #F9AD1B;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+li,i{
+    padding: 10px 25px;
+}
