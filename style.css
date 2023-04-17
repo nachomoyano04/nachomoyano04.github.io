@@ -16,3 +16,12 @@ li,i{
 .equipos{
     color: white;
 }
+.equipos .Team{
+    text-align: center;
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    width: 400px;
+    padding: 5px;
+    margin: 20px 5px;
+    display: inline-block;
+}
