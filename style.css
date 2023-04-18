@@ -1,8 +1,8 @@
 body{
-    background-color: #000000 ;
+    background-color: #555555 ;
     color: #B95915;
 }
-ul{
+.menu ul{
     margin: 0px 0px 20px 0px;
     background-color: #F9AD1B;
     font-size: 20px;
@@ -16,12 +16,24 @@ li,i{
 .equipos{
     color: white;
 }
-.equipos .Team{
+.equipos .team{
     text-align: center;
     border: 1px solid darkblue;
     border-radius: 20px;
     width: 400px;
+    height: 200px;
     padding: 5px;
     margin: 20px 5px;
+    display: inline-block;
+    background-color: black;
+}
+footer{
+    background-color: chartreuse;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+footer li{
+    
     display: inline-block;
 }
