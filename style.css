@@ -6,11 +6,16 @@ body{
     margin: 0px 0px 20px 0px;
     background-color: #F9AD1B;
     font-size: 20px;
-    display: flex;
     list-style: none;
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
-li,i{
-    padding: 10px 25px;
+.menu li,i{
+    display: inline-block;    
+    padding: 10px 25px 15px 25px;
 }
 
 .equipos{
@@ -33,7 +38,14 @@ footer{
     left: 0px;
     width: 100%;
 }
-footer li{
-    
-    display: inline-block;
+footer ul{
+    padding-left: 0px;
+    text-align: center;
+}
+footer li{   
+    display: inline-block;   
+}
+footer li a{
+    text-decoration: none;
+    color: white;
 }
