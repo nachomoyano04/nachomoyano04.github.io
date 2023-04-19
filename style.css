@@ -4,7 +4,7 @@ body{
 }
 .menu ul{
     margin: 0px 0px 20px 0px;
-    background-color: #F9AD1B;
+    background-color: #000000;
     font-size: 20px;
     list-style: none;
     width: 100%;
@@ -12,10 +12,23 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
+    font-family: Roboto, sans-serif;
 }
-.menu li,i{
+.menu ul img{
+    width: 80px;
+    height: 80px;
+}
+#imgAro{
+    padding: 0px 25px 0px 25px;
+}
+.menu-li-sinImg{
     display: inline-block;    
-    padding: 10px 25px 15px 25px;
+    padding: 30px 25px 30px 25px;
+    border: 1px solid white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
 }
 
 .equipos{
