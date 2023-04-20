@@ -1,9 +1,16 @@
-body{
-    background-color: #555555 ;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{    
     color: #B95915;
+    background-color: #000000;
+}
+.caja{
+    margin-top: 90px;
 }
 .menu ul{
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
     background-color: #000000;
     font-size: 20px;
     list-style: none;
@@ -12,27 +19,38 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Noto Sans JP',Roboto, sans-serif;
+    display: flex;
 }
 .menu ul img{
     width: 80px;
     height: 80px;
+    padding-left: 60px;
 }
-#imgAro{
-    padding: 0px 25px 0px 25px;
-}
-.menu-li-sinImg{
+.menu-li{
     display: inline-block;    
-    padding: 30px 25px 30px 25px;
-    border: 1px solid white;
+    padding: 25px 35px 25px 35px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+.menu i{
+    padding-right: 10px;
 }
 .menu a{
     text-decoration: none;
     color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.menu a:hover{
+    transition: 1s;
+    background-color: #E56020;
 }
 
 .equipos{
     color: white;
+    background: linear-gradient(#000000,#B95915);
+    text-align: center;
 }
 .equipos .team{
     text-align: center;
@@ -40,25 +58,43 @@ body{
     border-radius: 20px;
     width: 400px;
     height: 200px;
-    padding: 5px;
-    margin: 20px 5px;
+    padding: 2px;
+    margin: 10px 5px;
+    top: 10px;
     display: inline-block;
     background-color: black;
 }
-footer{
-    background-color: chartreuse;
-    position: absolute;
-    left: 0px;
+.footer{
+    background-color: #000000;
     width: 100%;
-}
-footer ul{
-    padding-left: 0px;
     text-align: center;
+    margin: 10px 10px 10px 10px;
 }
-footer li{   
-    display: inline-block;   
+.footer li{   
+    display: inline-block;
 }
-footer li a{
+.github,.instagram,.linkedin{
+    margin-left: 50px;
     text-decoration: none;
-    color: white;
+    padding: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+.footer .github::after,.instagram::after,.linkedin::after{
+    padding: 0px;
+    content: ""; 
+    transition: 1s;
+}
+.github:hover::after{
+    padding: 5px;
+    content: "GitHub";
+  }
+.instagram:hover::after{
+    padding: 5px;
+    content: "Instagram";
+}
+.linkedin:hover::after{
+    padding: 5px;
+    content: "LinkedIn";
 }
