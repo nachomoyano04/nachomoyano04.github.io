@@ -4,7 +4,6 @@
 }
 body{    
     color: #B95915;
-    background-color: #000000;
 }
 .caja{
     margin-top: 90px;
@@ -54,21 +53,65 @@ body{
 }
 .equipos .team{
     text-align: center;
-    border: 1px solid darkblue;
+    border: 1px solid darkred;
     border-radius: 20px;
     width: 400px;
     height: 200px;
-    padding: 2px;
     margin: 10px 5px;
     top: 10px;
     display: inline-block;
     background-color: black;
 }
+.equipos h2{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+}
+
+
+.equipos #suns h2{background: linear-gradient(to right, #1D1160 50%,#E56020 50%);}
+.equipos #warriors h2{background: linear-gradient(to right,#1D428A 50%,#FFC72C 50%);}
+.equipos #blazers h2{background:linear-gradient(to right,#E03A3E 50%, #000000 50%)}
+.equipos #mavericks h2{background:linear-gradient(to right,#00538C 50%, #002B5E 50%)}
+.equipos #spurs h2{background:linear-gradient(to right, #C4CED4 50%, #000000 50%)}
+.equipos #nuggets h2{background:linear-gradient(to right,#0E2240 50%, #FEC524 50%)}
+.equipos #pelicans h2{background:linear-gradient(to right,#0C2340 50%, #C8102E 50%)}
+.equipos #kings h2{background:linear-gradient(to right,#5A2D81 50%, #63727A 50%)}
+.equipos #clippers h2{background:linear-gradient(to right, #C8102E 50%,#1D428A 50%)}
+.equipos #thunders h2{background:linear-gradient(to right, #007AC1 50%, #EF3B24 50%)}
+.equipos #timberwolves h2{background:linear-gradient(to right,#0C2340 50%, #78BE20 50%)}
+.equipos #grizzlies h2{background:linear-gradient(to right,#5D76A9 50%, #12173F 50%)}
+.equipos #jazz h2{background:linear-gradient(to right,#00471B 50%, #F9A01B 50%)}
+.equipos #lakers h2{background:linear-gradient(to right,#552583 50%, #FDB927 50%)}
+.equipos #rockets h2{background:linear-gradient(to right,#CE1141 50%, #000000 50%)}
+.equipos #philly h2{background:linear-gradient(to right,#006BB6 50%, #ED174C 50%)}
+.equipos #bucks h2{background:linear-gradient(to right,#00471B 50%, #EEE1C6 50%)}
+.equipos #nets h2{background:linear-gradient(to right,#000000 50%, #FFFFFF 50%)}
+.equipos #pacers h2{background:linear-gradient(to right,#002D62 50%, #FDBB30 50%)}
+.equipos #bulls h2{background:linear-gradient(to right,#CE1111 50%, #000000 50%)}
+.equipos #heat h2{background:linear-gradient(to right,#CE1111 50%, #F9A01B 50%)}
+.equipos #wizards h2{background:linear-gradient(to right,#002B5C 50%, #E31837 50%)}
+.equipos #hawks h2{background:linear-gradient(to right,#C8102E 50%, #ffffff 50%)}
+.equipos #pistons h2{background:linear-gradient(to right,#C8102E 50%, #1D42BA 50%)}
+.equipos #knicks h2{background:linear-gradient(to right,#006BB6 50%, #F58426 50%)}
+.equipos #celtics h2{background:linear-gradient(to right,#007A33 50%, #BA9653 50%)}
+.equipos #hornets h2{background:linear-gradient(to right,#1D1160 50%, #00788C 50%)}
+
+.equipos #magic h2{background:linear-gradient(to right,#0077C0 50%, #C4CED4 50%)}
+.equipos #cavaliers h2{background:linear-gradient(to right,#860038 50%, #FDBB30 50%)}
+.equipos #raptors h2{background:linear-gradient(to right,#CE1141 50%, #000000 50%)}
+
+
+
+
+
+
 .footer{
     background-color: #000000;
     width: 100%;
     text-align: center;
-    margin: 10px 10px 10px 10px;
+    padding: 30px 0px 30px 0px;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 .footer li{   
     display: inline-block;
@@ -88,13 +131,13 @@ body{
 }
 .github:hover::after{
     padding: 5px;
-    content: "GitHub";
+    content: "GITHUB";
   }
 .instagram:hover::after{
     padding: 5px;
-    content: "Instagram";
+    content: "INSTAGRAM";
 }
 .linkedin:hover::after{
     padding: 5px;
-    content: "LinkedIn";
+    content: "LINKEDIN";
 }
