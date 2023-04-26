@@ -48,12 +48,12 @@ body{
 
 .equipos{
     color: white;
-    background: linear-gradient(#000000,#B95915);
+    background:linear-gradient(#000000,#17408B,#FFFFFF);
     text-align: center;
 }
 .equipos .team{
     text-align: center;
-    border: 1px solid darkred;
+    border: 1px solid navy;
     border-radius: 20px;
     width: 400px;
     height: 200px;
@@ -67,44 +67,47 @@ body{
     border-top-right-radius: 20px;
     padding: 5px;
 }
-
-
-.equipos #suns h2{background: linear-gradient(to right, #1D1160 50%,#E56020 50%);}
-.equipos #warriors h2{background: linear-gradient(to right,#1D428A 50%,#FFC72C 50%);}
-.equipos #blazers h2{background:linear-gradient(to right,#E03A3E 50%, #000000 50%)}
-.equipos #mavericks h2{background:linear-gradient(to right,#00538C 50%, #002B5E 50%)}
-.equipos #spurs h2{background:linear-gradient(to right, #C4CED4 50%, #000000 50%)}
-.equipos #nuggets h2{background:linear-gradient(to right,#0E2240 50%, #FEC524 50%)}
-.equipos #pelicans h2{background:linear-gradient(to right,#0C2340 50%, #C8102E 50%)}
+.equipos .conferencia{
+    padding: 30px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.equipos .site{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+/*Colores de los equipos*/
+.equipos #suns h2{  background: linear-gradient(to right, #1D1160 50%,#E56020 50%);}
+.equipos #warriors h2{background: linear-gradient(to right,#1D428A 50%, #FFC72C 50%);}
+.equipos #blazers h2{background:linear-gradient(to right,#E03A3E 50%, #000000 50%);}
+.equipos #mavericks h2{background:linear-gradient(to right,#00538C 50%,#002B5E 50%)}
+.equipos #spurs h2{background:linear-gradient(to right, #C4CED4 0%,#C4CED4 25%,#000000 25%,#000000 75%,#C4CED4 75%,#C4CED4 100%);background-clip: text; color: #FFFFFF;}
+.equipos #nuggets h2{background:linear-gradient(to right, #FEC524 0%, #FEC524 33%, #0E2240 33%, #0E2240 66%, #8B2131 66%,#8B2131 100%)}
+.equipos #pelicans h2{background:linear-gradient(to right,#0C2340 0%,#0C2340 33%, #C8102E 33%,#C8102E 66%,#85714D 66%,#85714D 100%)}
 .equipos #kings h2{background:linear-gradient(to right,#5A2D81 50%, #63727A 50%)}
 .equipos #clippers h2{background:linear-gradient(to right, #C8102E 50%,#1D428A 50%)}
 .equipos #thunders h2{background:linear-gradient(to right, #007AC1 50%, #EF3B24 50%)}
 .equipos #timberwolves h2{background:linear-gradient(to right,#0C2340 50%, #78BE20 50%)}
 .equipos #grizzlies h2{background:linear-gradient(to right,#5D76A9 50%, #12173F 50%)}
-.equipos #jazz h2{background:linear-gradient(to right,#00471B 50%, #F9A01B 50%)}
+.equipos #jazz h2{background:linear-gradient(to right,#002B5C 0%,#002B5C 33%, #F9A01B 33%, #F9A01B 66%, #00471B 66%, #00471B 100% )}
 .equipos #lakers h2{background:linear-gradient(to right,#552583 50%, #FDB927 50%)}
-.equipos #rockets h2{background:linear-gradient(to right,#CE1141 50%, #000000 50%)}
+.equipos #rockets h2{background:linear-gradient(to right,#CE1141 0%,#CE1141 33%, #000000 33%,#000000 66%, #C4CED4 66%, #C4CED4 100%)}
 .equipos #philly h2{background:linear-gradient(to right,#006BB6 50%, #ED174C 50%)}
-.equipos #bucks h2{background:linear-gradient(to right,#00471B 50%, #EEE1C6 50%)}
-.equipos #nets h2{background:linear-gradient(to right,#000000 50%, #FFFFFF 50%)}
+.equipos #bucks h2{background:linear-gradient(to right,#00471B 50%,#00471B 50%, #EEE1C6 50%)}
+.equipos #nets h2{background:linear-gradient(to right,#FFFFFF 0%,#FFFFFF 25%,#000000 25%,#000000 75%, #FFFFFF 75%,#FFFFFF 100%)}
 .equipos #pacers h2{background:linear-gradient(to right,#002D62 50%, #FDBB30 50%)}
 .equipos #bulls h2{background:linear-gradient(to right,#CE1111 50%, #000000 50%)}
 .equipos #heat h2{background:linear-gradient(to right,#CE1111 50%, #F9A01B 50%)}
 .equipos #wizards h2{background:linear-gradient(to right,#002B5C 50%, #E31837 50%)}
-.equipos #hawks h2{background:linear-gradient(to right,#C8102E 50%, #ffffff 50%)}
+.equipos #hawks h2{background:linear-gradient(to right,#C8102E 50%, #FDB927 50%)}
 .equipos #pistons h2{background:linear-gradient(to right,#C8102E 50%, #1D42BA 50%)}
 .equipos #knicks h2{background:linear-gradient(to right,#006BB6 50%, #F58426 50%)}
 .equipos #celtics h2{background:linear-gradient(to right,#007A33 50%, #BA9653 50%)}
 .equipos #hornets h2{background:linear-gradient(to right,#1D1160 50%, #00788C 50%)}
-
 .equipos #magic h2{background:linear-gradient(to right,#0077C0 50%, #C4CED4 50%)}
 .equipos #cavaliers h2{background:linear-gradient(to right,#860038 50%, #FDBB30 50%)}
 .equipos #raptors h2{background:linear-gradient(to right,#CE1141 50%, #000000 50%)}
-
-
-
-
-
 
 .footer{
     background-color: #000000;
