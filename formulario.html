@@ -1,7 +1,44 @@
 <html>
     <head>
         <title>Formulario Locked-In</title>
-        <link rel="icon" href="baloncesto.png">
         <meta charset="UTF-8"> 
+        <link rel="icon" href="baloncesto.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/71b6eb9cac.js" crossorigin="anonymous"></script>
     </head>
+    <body class="bodyIndex">
+        <section class="menu">
+            <ul>
+                <li><img src="hoop.png" alt="aro"></li>
+                <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="index.html">Inicio</a></li>
+                <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="pagina1.html">About</a></li>
+                <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="formulario.html">Formulario de Inscripcion</a></li>        
+            </ul>
+        </section>
+        <section class="form">
+            <div class="tituloFormulario">
+                <h2>Rellene con sus datos para recibir información diaria sobre Locked-In</h2>
+            </div>
+            <form action="/action_page.php" class="forms">
+                    <!-- label Nombre -->
+                    <div class="labelNombre">
+                        <label for="fnombre">NOMBRE</label>
+                        <input type="text" id="fnombre" name="fnombre">
+                    </div>
+                    <!-- label Apellido -->
+                    <div class="labelNombre">
+                        <label for="fapellido">APELLIDO</label>
+                        <input type="text" id="fapellido" name="fapellido">
+                    </div>
+
+            </form>
+        </section>
+    </body>
+    <footer class="footer">
+        <ul>
+            <li><a href="https://github.com/nachomoyano04"  class="github"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/nachomoyano12/"  class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ignacio-moyano-guzman-829957244/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
 </html>

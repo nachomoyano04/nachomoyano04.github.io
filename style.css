@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{    
+.bodyIndex{    
     color: #B95915;
 }
 .caja{
@@ -143,4 +143,47 @@ body{
 .linkedin:hover::after{
     padding: 5px;
     content: "LINKEDIN";
+}
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #B95915;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+}
+
+/* ESTILO DE FORMULARIO */
+.form{
+    /* display: inline-block; */
+    background-color: #002B5C;
+}
+.form .forms{
+    border:5px solid red;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 0px 0px 0px 40px;
+    background-color: #000000;
+}
+.labelNombre{
+    color: #00471B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder; 
+    margin: 20px 0px 0px 40px;
+}
+#fnombre{
+    margin-left: 30px;
+}
+#fapellido{
+    margin-left: 20px;
+}
+.tituloFormulario{
+    margin: 100px 5px 10px 5px;
+    background-color: #0C2340;
+    color: white;
 }
