@@ -53,7 +53,7 @@
 }
 .equipos .team{
     text-align: center;
-    border: 1px solid navy;
+    border: 3px solid black;
     border-radius: 20px;
     width: 400px;
     height: 200px;
@@ -63,8 +63,8 @@
     background-color: black;
 }
 .equipos h2{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     padding: 5px;
 }
 .equipos .conferencia{
@@ -624,4 +624,12 @@
 }
 #raptorsParrafo h4{
     color:#CE1141;
+}
+#a{
+    text-decoration: none;
+    color:  #FFFFFF;
+}
+.team:hover{
+    border: 3px solid white;
+    transition: 1s;
 }
