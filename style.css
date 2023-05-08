@@ -445,13 +445,183 @@
 #grizzliesParrafo h4{
     color: #12173F;
 }
-/*Utah #002B5C #F9A01B #00471B*/
+/*Utah*/
 #utahAbout h3{
     color: #F9A01B;
 }
 #utahParrafo table{   
-    color:#002B5C ;
+    color:#F9A01B ;
 }
 #utahParrafo h4{
     color: #00471B;
+}
+/*Lakers*/
+#lakersAbout h3{
+    color: #FDB927 ;
+}
+#lakersParrafo table{   
+    color:#FDB927 ;
+}
+#lakersParrafo h4{
+    color: #552583;
+}
+/*Rockets*/
+#rocketsAbout h3{
+    color: #CE1141 ;
+}
+#rocketsParrafo table{   
+    color:#C4CED4 ;
+}
+#rocketsParrafo h4{
+    color: #C4CED4;
+}
+/*Philladelphia*/
+#phillyAbout h3{
+    color: #006BB6  ;
+}
+#phillyParrafo table{   
+    color:#006BB6 ;
+}
+#phillyParrafo h4{
+    color: #ED174C;
+}
+/*Bucks*/
+#bucksAbout h3{
+    color:  #EEE1C6  ;
+}
+#bucksParrafo table{   
+    color:#EEE1C6 ;
+}
+#bucksParrafo h4{
+    color: #00471B;
+}
+/*Nets*/
+#netsAbout h3{
+    color:  #EEE1C6  ;
+}
+#netsParrafo table{   
+    color:#EEE1C6 ;
+}
+#netsParrafo h4{
+    color: #EEE1C6;
+}
+/*Pacers*/
+#pacersAbout h3{
+    color:  #FDBB30  ;
+}
+#pacersParrafo table{   
+    color:#FDBB30 ;
+}
+#pacersParrafo h4{
+    color:  #002D62;
+}
+/*Bulls*/
+#bullsAbout h3{
+    color:  #CE1111;
+}
+#bullsParrafo table{   
+    color: #ffffff ;
+}
+#bullsParrafo h4{
+    color:  #CE1111;
+}
+/*Heat*/
+#heatAbout h3{
+    color:  #CE1111;
+}
+#heatParrafo table{   
+    color: #F9A01B ;
+}
+#heatParrafo h4{
+    color:  #CE1111;
+}
+/*Wizards*/
+#wizardsAbout h3{
+    color:  #002B5C;
+}
+#wizardsParrafo table{   
+    color: #002B5C ;
+}
+#wizardsParrafo h4{
+    color:  #E31837;
+}
+/*Hawks*/
+#hawksAbout h3{
+    color: #FDB927 ;
+}
+#hawksParrafo table{   
+    color:  #FDB927 ;
+}
+#hawksParrafo h4{
+    color:  #C8102E;
+}
+/*Pistons*/
+#pistonsAbout h3{
+    color: #1D42BA ;
+}
+#pistonsParrafo table{   
+    color:  #1D42BA ;
+}
+#pistonsParrafo h4{
+    color:  #C8102E;
+}
+/*Knicks*/
+#knicksAbout h3{
+    color: #F58426;
+}
+#knicksParrafo table{   
+    color:  #F58426;
+}
+#knicksParrafo h4{
+    color:  #006BB6;
+}
+/*celtics*/
+#celticsAbout h3{
+    color:#007A33;
+}
+#celticsParrafo table{   
+    color:#007A33;
+}
+#celticsParrafo h4{
+    color:#BA9653;
+}
+/*hornets*/
+#hornetsAbout h3{
+    color:#00788C;
+}
+#hornetsParrafo table{   
+    color:#00788C;
+}
+#hornetsParrafo h4{
+    color:#1D1160;
+}
+/*magic*/
+#magicAbout h3{
+    color:#0077C0;
+}
+#magicParrafo table{   
+    color:#0077C0;
+}
+#magicParrafo h4{
+    color:#C4CED4;
+}
+/*cavs*/
+#cavsAbout h3{
+    color:#FDBB30;
+}
+#cavsParrafo table{   
+    color:#FDBB30;
+}
+#cavsParrafo h4{
+    color:#860038;
+}
+/*raptors*/
+#raptorsAbout h3{
+    color:#CE1141;
+}
+#raptorsParrafo table{   
+    color:#CE1141;
+}
+#raptorsParrafo h4{
+    color:#CE1141;
 }
