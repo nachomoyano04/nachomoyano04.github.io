@@ -2,7 +2,7 @@
     <head>
         <title>Formulario Locked-In</title>
         <meta charset="UTF-8"> 
-        <link rel="icon" href="baloncesto.png">
+        <link rel="icon" href="imagenes/baloncesto.png">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/71b6eb9cac.js" crossorigin="anonymous"></script> 
     </head>
@@ -10,7 +10,7 @@
         
         <section class="menu">
             <ul>
-                <li><img src="hoop.png" alt="aro"></li>
+                <li><img src="imagenes/hoop.png" alt="aro"></li>
                 <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="index.html">Inicio</a></li>
                 <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="about.html">About</a></li>
                 <li class="menu-li"><i class="fa-solid fa-basketball"></i><a href="formulario.html">Formulario de Inscripcion</a></li>        
@@ -23,33 +23,39 @@
                 <h2>Rellene con sus datos para recibir información diaria sobre Locked-In</h2>
             </div>
             <section class="formulario">
-                <form action="/www.instagram.com" class="forms">
+                <form action="/www.instagram.com" class="forms"  onsubmit="return validarFormulario()">
                         <!-- label Nombre -->
-                        <div class="labelNombre">
+                        <div class="label">
                             <label for="fnombre">NOMBRE</label>
                             <input type="text" id="fnombre" name="fnombre">
                         </div>
+                        <ul id="validacionNombre"></ul>
                         <!-- label Apellido -->
-                        <div class="labelNombre">
+                        <div class="label">
                             <label for="fapellido">APELLIDO</label>
                             <input type="text" id="fapellido" name="fapellido">
                         </div>
+                        <ul id="validacionApellido"></ul>
                         <!-- label Email -->
-                        <div class="labelNombre">
+                        <div class="label">
                             <label for="femail">EMAIL</label>
-                            <input type="email" id="femail" name="femail">
+                            <input type="text" id="femail" name="femail">
                         </div>
+                        <ul id="validacionEmail"></ul>
                         <!-- label Mensaje -->
-                        <div class="labelNombre">
+                        <div class="label">
                             <label for="fmensaje" id="lfmensaje">MENSAJE</label>
                             <textarea name="fmensaje" cols="30" rows="10" id="tAfmensaje"></textarea>
                         </div>
+                        <ul id="mensajeConfirmacionFormulario"></ul>
                         <div >
                             <button class="botonEnviar">ENVIAR</button>
                         </div>
                 </form>
             </section>
         </section>
+        <script src="javascript.js"></script>
+
     </body>
     <footer class="footer">
         <ul>
