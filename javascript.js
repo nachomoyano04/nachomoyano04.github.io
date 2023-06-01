@@ -1,8 +1,9 @@
+
 function validarNombre() {
     let nombre = document.getElementById("fnombre");
     let listaErrores = document.getElementById("validacionNombre");
     let li = document.createElement("li");
-    if(nombre.value == ""|| nombre.value.length < 4 ){
+    if(nombre.value == ""|| nombre.value.length < 3 ){
         nombre.style.border = "3px solid red";
         listaErrores.appendChild(li);
         li.innerHTML = "El campo debe contener minimo 3 caracteres";
@@ -16,7 +17,7 @@ function validarApellido(){
     let apellido = document.getElementById("fapellido");
     let listaErrores = document.getElementById("validacionApellido");
     let li = document.createElement("li");
-    if(apellido.value == "" || apellido.value.length < 4){
+    if(apellido.value == "" || apellido.value.length < 3){
         apellido.style.border = "3px solid red";
         listaErrores.appendChild(li);
         li.innerHTML = "El campo debe contener minimo 3 caracteres";
@@ -52,11 +53,11 @@ function validarFormulario() {
     let boolApellido = validarApellido();
     let boolEmail = validarEmail();
     let nombreValidado = document.getElementById("mensajeConfirmacionFormulario");
-    if(boolNombre && boolApellido && boolEmail){
-        let bienvenida = document.createElement("li");
-        let nombreUl = document.createElement("li");
-        let nombre = document.getElementById("fnombre").value;
-        let apellido = document.getElementById("fapellido").value;
+    let bienvenida = document.createElement("li");
+    let nombreUl = document.createElement("li");
+    let nombre = document.getElementById("fnombre").value;
+    let apellido = document.getElementById("fapellido").value;
+    if(boolNombre && boolApellido && boolEmail &&(bienvenida.value=="")){
         bienvenida.innerHTML = "¡¡¡Bienvenido a Locked-In: !!!";
         nombreUl.innerHTML = nombre+" "+apellido;
         nombreValidado.appendChild(bienvenida);
@@ -65,96 +66,48 @@ function validarFormulario() {
     return false;
 }
 
-let indice = 1;
+document.addEventListener("DOMContentLoaded", function() {
+    let carrusel = document.getElementById("carrusel");
+    let carruselItems = carrusel.getElementsByClassName("carousel-item");
+    let botonAtras = document.getElementById("buttonBack");
+    let botonAdelante = document.getElementById("buttonFront");
+    let indice = 0;
+    let contador = carruselItems.length;
+    function mostrar() {
+      for (let i = 0; i < contador; i++) {
+        carruselItems[i].style.display = "none";
+      }
+  
+      for (let i = indice; i < indice + 3; i++) {
+        if (carruselItems[i]) {
+          carruselItems[i].style.display = "block";
+        }
+      }
+    }
+  
+    function siguiente() {
+        indice += 3;
+      if (indice >= contador) {
+        indice = 0;
+      }
+      mostrar();
+    }
+  
+    function anterior() {
+        indice -= 3;
+      if (indice < 0) {
+        indice = contador - 3;
+      }
+      mostrar();
+    }
+  
+    mostrar();
+  
+    botonAtras.addEventListener("click", function() {
+        setTimeout(anterior, 200);
+    });
+    botonAdelante.addEventListener("click", function() {
+        setTimeout(siguiente, 200);
+    });
 
-function devolverDiv(Num){
-    let suns = document.getElementById("sunsAbout");
-    let gsw = document.getElementById("gswAbout");
-    let portland = document.getElementById("portlandAbout");
-    let mavs = document.getElementById("mavsAbout");
-    let spurs = document.getElementById("spursAbout");
-    let nuggets = document.getElementById("nuggetsAbout");
-    let pelicans = document.getElementById("pelicansAbout");
-    let kings = document.getElementById("kingsAbout");
-    let clippers = document.getElementById("clippersAbout");
-    let thunders = document.getElementById("thundersAbout");
-    let wolves = document.getElementById("wolvesAbout");
-    let grizzlies = document.getElementById("grizzliesAbout");
-    let utah = document.getElementById("utahAbout");
-    let lakers = document.getElementById("lakersAbout");
-    let rockets = document.getElementById("rocketsAbout");
-    let philly = document.getElementById("phillyAbout");
-    let bucks = document.getElementById("bucksAbout");
-    let nets = document.getElementById("netsAbout");
-    let pacers = document.getElementById("pacersAbout");
-    let bulls = document.getElementById("bullsAbout");
-    let heat = document.getElementById("heatAbout");
-    let wizards = document.getElementById("wizardsAbout");
-    let hawks = document.getElementById("hawksAbout");
-    let pistons = document.getElementById("pistonsAbout");
-    let knicks = document.getElementById("knicksAbout");
-    let celtics = document.getElementById("celticsAbout");
-    let hornets = document.getElementById("hornetsAbout");
-    let magic = document.getElementById("magicAbout");
-    let cavs = document.getElementById("cavsAbout");
-    let raptors = document.getElementById("raptorsAbout");
-    let vector = {suns,gsw,portland,mavs,spurs,nuggets,pelicans,kings,clippers,thunders,
-    wolves,grizzlies,utah,lakers,rockets,philly,bucks,nets,pacers,bulls,heat,wizards,
-    hawks,pistons,knicks,celtics,hornets,magic,cavs,raptors};
-    return vector[Num];
-}
-
-function avanzar(){
-    indice++;
-    devolverDiv(indice);
-}
-
-function retroceder(){
-    indice--;
-    devolverDiv(indice);
-}
-
-// // function carrusel(){
-//     var equipoWidth = document.querySelector(".team").offsetWidth;
-//     var currentIndex = 0;
-//     var desplazamiento = -currentIndex * equipoWidth;
-//     let equipos = document.querySelector(".equipos");
-//     equipos.style.transform = 'translateX(' + desplazamiento + 'px)';
-// // }
-// // carrusel();
-    // var carrusel = document.querySelector('.carrusel');
-    // var equipos = document.querySelector('.equipos');
-    // var equipoWidth = document.querySelector('.team').offsetWidth;
-    // var currentIndex = 0;
-
-    // function mostrarEquipo(index) {
-    //     var desplazamiento = -index * equipoWidth;
-    //     equipos.style.transform = 'translateX(' + desplazamiento + 'px)';
-    // }
-
-    // function siguienteEquipo() {
-    //     currentIndex++;
-    //     if (currentIndex >= equipos.children.length) {
-    //         currentIndex = 0;
-    //     }
-    //     mostrarEquipo(currentIndex);
-    // }
-
-    // function anteriorEquipo() {
-    //     currentIndex--;
-    //     if (currentIndex < 0) {
-    //         currentIndex = equipos.children.length - 1;
-    //     }
-    //     mostrarEquipo(currentIndex);
-    // }
-
-    // setInterval(siguienteEquipo, 3000); // Cambiar de equipo automáticamente cada 3 segundos
-    // setInterval(anteriorEquipo,3000);
-    // carrusel.addEventListener('mouseover', function() {
-    //     clearInterval(interval);
-    // });
-
-    // carrusel.addEventListener('mouseout', function() {
-    //     interval = setInterval(siguienteEquipo, 3000);
-    // });
-
+  });
