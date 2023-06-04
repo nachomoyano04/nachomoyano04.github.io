@@ -172,15 +172,15 @@
 /* ESTILO DE FORMULARIO */
 .main{
     background-image: url(imagenes/basketballCourt.jpg);
-    background-size: 1400px 800px;
+    background-size: 1400px 1000px;
     background-repeat: no-repeat;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 .forms{
     border:5px solid purple;
     border-radius: 15px;
     width: 600px;
-    height: 600px;
+    height: 640px;
     margin: 0px 0px 0px 60px;
     background-color: #000000;
 }

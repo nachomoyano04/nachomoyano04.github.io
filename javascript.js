@@ -42,6 +42,7 @@ function validarEmail() {
         return true;
     }
 }
+  let mensaje = false; 
 function validarFormulario() {
     let listaErroresNombre = document.getElementById("validacionNombre");
     let listaErroresApellido = document.getElementById("validacionApellido");
@@ -53,15 +54,27 @@ function validarFormulario() {
     let boolApellido = validarApellido();
     let boolEmail = validarEmail();
     let nombreValidado = document.getElementById("mensajeConfirmacionFormulario");
-    let bienvenida = document.createElement("li");
-    let nombreUl = document.createElement("li");
-    let nombre = document.getElementById("fnombre").value;
-    let apellido = document.getElementById("fapellido").value;
-    if(boolNombre && boolApellido && boolEmail &&(bienvenida.value=="")){
+
+    let nombre = document.getElementById("fnombre");
+    let apellido = document.getElementById("fapellido");
+    let email = document.getElementById("femail");
+    let mensajeTxt = document.getElementById("tAfmensaje")
+    if(boolNombre && boolApellido && boolEmail){
+        if(mensaje){
+          nombreValidado.innerHTML = "";
+        }
+          let bienvenida = document.createElement("li");
+          let nombreUl = document.createElement("li");
         bienvenida.innerHTML = "¡¡¡Bienvenido a Locked-In: !!!";
-        nombreUl.innerHTML = nombre+" "+apellido;
+        nombreUl.innerHTML = nombre.value+" "+apellido.value;
         nombreValidado.appendChild(bienvenida);
         nombreValidado.appendChild(nombreUl);
+        mensaje = true;
+        nombre.value = "";
+        apellido.value = "";
+        email.value = "";
+        mensajeTxt.value = "";
+        
     }
     return false;
 }
